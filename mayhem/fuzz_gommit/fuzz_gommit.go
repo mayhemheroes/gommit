@@ -22,20 +22,13 @@ func mayhemit(data []byte) int {
                 return 0
 
             case 1:
-                var testMatch gommit.MessageQuery
-                fuzzConsumer.GenerateStruct(&testMatch)
-
-                gommit.MatchMessageQuery(testMatch)
-                return 0
-
-            case 2:
                 var testMatch gommit.CommitQuery
                 fuzzConsumer.GenerateStruct(&testMatch)
 
                 gommit.MatchCommitQuery(testMatch)
                 return 0
 
-            case 3:
+            case 2:
                 var testMatch gommit.RangeQuery
                 fuzzConsumer.GenerateStruct(&testMatch)
 

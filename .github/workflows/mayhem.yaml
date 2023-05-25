@@ -59,7 +59,8 @@ jobs:
       fail-fast: false
       matrix:
         mayhemfile:
-          - mayhem/Mayhemfile
+          - mayhem/fuzz_gommit.mayhemfile
+          - mayhem/fuzz_gommit_messagequery.mayhemfile
 
     steps:
       - uses: actions/checkout@v3
